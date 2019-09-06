@@ -19,7 +19,7 @@ router.post("/register", function(req, res) {
         lastname: req.body.lastname,
         email: req.body.email,
     }); 
-    if(req.body.adminKey === "nfgngfn467-g854ngfn-s74ns*ng8g4n8g"){
+    if(req.body.adminKey === "***"){
         newUser.isAdmin = true;
     }
     User.register(newUser, req.body.password, function(err, user){
