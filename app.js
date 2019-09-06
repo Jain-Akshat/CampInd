@@ -18,7 +18,7 @@ var commentsRoutes   = require("./routes/comments"),
 
 
 // assign mongoose promise library and connect to database
-mongoose.connect('mongodb+srv://Akshat:Akshat9998@campind-8jqjx.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect('***', {
 	useNewUrlParser: true,
 	useCreateIndex: true
 }).then(() => {
@@ -33,7 +33,7 @@ app.use(methodOverride("_method"));
 app.use(flash());
 
 app.use(require("express-session")({
-    secret: "This CampInd Site Can Only Be Hacked By Akshat",
+    secret: "***",
     resave: false,
     saveUninitialized: false
 }));
