@@ -18,7 +18,7 @@ var commentsRoutes   = require("./routes/comments"),
 
 
 // assign mongoose promise library and connect to database
-mongoose.connect('mongodb+srv://campsite:akshat123@campingsite-scfq3.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://Akshat:Akshat9998@campind-8jqjx.mongodb.net/test?retryWrites=true&w=majority', {
 	useNewUrlParser: true,
 	useCreateIndex: true
 }).then(() => {
@@ -33,7 +33,7 @@ app.use(methodOverride("_method"));
 app.use(flash());
 
 app.use(require("express-session")({
-    secret: "This Camping Site Can Only Be Hacked By Akshat",
+    secret: "This CampInd Site Can Only Be Hacked By Akshat",
     resave: false,
     saveUninitialized: false
 }));
@@ -58,5 +58,5 @@ app.use("/campgrounds/:id/comments", commentsRoutes);
 
 
 app.listen(process.env.PORT, process.env.IP, function(){
-   console.log("The CampSite Server Has Started"); 
+   console.log("The CampInd Server Has Started"); 
 });
